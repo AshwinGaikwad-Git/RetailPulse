@@ -19,8 +19,8 @@ in `dataset/` when needed. No API key or secret is required.
 
 ## Streamlit Community Cloud (prepared, not deployed)
 
-1. Review the repository, license and screenshots. Push to your GitHub repository yourself
-   only when ready; no push or deployment has been performed by this implementation.
+1. Review the published [GitHub repository](https://github.com/AshwinGaikwad-Git/RetailPulse),
+   license and screenshots. Push any further reviewed changes before deploying.
 2. Create a Streamlit Community Cloud app from that repository and branch.
 3. Choose `streamlit_app.py` as the entry point and Python 3.12 in Advanced settings.
 4. The service reads the root `requirements.txt` and `.streamlit/config.toml`.
@@ -57,8 +57,8 @@ python scripts/verify_results.py
 
 The CI workflow runs deterministic tests and imports on push/PR. Its manually triggered second
 job downloads the real source and verifies generated results; routine PRs do not depend on UCI
-availability. CI has been configured, but no GitHub-hosted run is claimed until the workflow
-is actually pushed and executed.
+availability. The workflow is published. Consult the repository Actions tab for actual remote run results;
+local validation alone does not establish a remote CI pass.
 
 For screenshot reproduction, install `requirements-dev.txt`, run
 `python -m playwright install chromium`, start the dashboard locally and run

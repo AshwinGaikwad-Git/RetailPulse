@@ -20,7 +20,7 @@ Built by extending the existing Online Retail EDA. The original pipeline, execut
 
 ## Live Demo
 
-**Not deployed yet.** Add the verified live URL here after reviewing and deploying the application. No public deployment or GitHub push has been performed.
+**Not deployed yet.** Add the verified live URL here after reviewing and deploying the application. The source is published on GitHub; no public app deployment has been performed.
 
 ## Dashboard Screenshots
 
@@ -190,7 +190,7 @@ For the complete local validation (tests, dependency check, original pipeline, n
 python scripts/validate_project.py
 ```
 
-All **30 tests passed locally**, and all 11 existing notebook code cells were re-executed successfully. Real-browser checks also passed for the five views, four CSV downloads, country filtering and mobile overflow. Synthetic fixtures exist only inside tests. The dashboard always loads the real workbook. GitHub Actions is configured for push/PR tests and import checks. A manual workflow also runs network-dependent real-data checks. A remote CI run is not claimed until the workflow is pushed and executed.
+All **30 tests passed locally**, and all 11 existing notebook code cells were re-executed successfully. Real-browser checks also passed for the five views, four CSV downloads, country filtering and mobile overflow. Synthetic fixtures exist only inside tests. The dashboard always loads the real workbook. GitHub Actions is configured for push/PR tests and import checks. A manual workflow also runs network-dependent real-data checks. See [GitHub Actions](https://github.com/AshwinGaikwad-Git/RetailPulse/actions) for the current remote CI status.
 
 ## Methodology
 

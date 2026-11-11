@@ -98,8 +98,10 @@ python -m streamlit run streamlit_app.py
 
 Streamlit Community Cloud configuration is prepared: choose this entry point, Python 3.12,
 root dependencies and outbound access to UCI. See `docs/deployment.md` for manual steps.
-No public deployment, GitHub push or remote CI run has been performed. Docker is unavailable
-in the local environment, so the supplied Dockerfile has not been built or run here.
+The project was pushed to [GitHub](https://github.com/AshwinGaikwad-Git/RetailPulse) with user
+authorization on 12 November 2026. Push-triggered GitHub Actions checks were queued at the
+initial verification; consult the Actions tab for current results. No public app deployment
+has been performed. Docker is unavailable locally, so the Dockerfile has not been built or run here.
 
 ## Remaining limitations and priorities
 
