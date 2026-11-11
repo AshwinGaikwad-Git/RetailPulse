@@ -1,0 +1,3 @@
+-r requirements.txt
+# Optional browser validation and real screenshot capture
+playwright>=1.65,<2

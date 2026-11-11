@@ -1,0 +1,11 @@
+.venv
+.uv-cache
+.git
+**/__pycache__
+dataset
+visualizations
+notebooks
+assets
+*.pdf
+.env*
+**/secrets.toml

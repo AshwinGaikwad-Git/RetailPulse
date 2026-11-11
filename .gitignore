@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.uv-cache/
+venv/
+env/
+.ipynb_checkpoints/
+
+# Dataset (large, licensed/source data should be fetched locally)
+dataset/*
+!dataset/.gitkeep
+
+# Generated analytical outputs
+analysis_summary.json
+visualizations/*.png
+data/cleaned_online_retail.csv
+data/customer_rfm.csv
+
+# Editors / operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Credentials and local state
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.pem
+*.key
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.part
+test-results/
+playwright-report/
+
+# Keep intentional assets/screenshots; original analysis charts remain reproducible.

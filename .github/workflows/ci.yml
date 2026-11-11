@@ -1,0 +1,39 @@
+name: RetailPulse checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements-lock.txt
+      - run: python -m pip check
+      - name: Import and analytical smoke checks
+        run: python -c "import streamlit, plotly; from src.reporting import load_analysis; from src.finance import revenue_metrics; from dashboard.ui import main"
+      - name: Unit, reconciliation, and dashboard interaction tests
+        run: python -m unittest discover -s tests -v
+      - name: Compile all application modules
+        run: python -m compileall -q src dashboard streamlit_app.py
+
+  real-data:
+    # Network-dependent verification is opt-in; deterministic checks above always run.
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements-lock.txt
+      - run: python src/data_cleaning.py
+      - run: python -m src.reporting
+      - run: python scripts/verify_results.py

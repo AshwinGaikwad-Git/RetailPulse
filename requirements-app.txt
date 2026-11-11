@@ -1,0 +1,8 @@
+# Dashboard and analytical runtime (Python 3.12)
+pandas>=3.1,<4
+numpy>=2.5,<3
+matplotlib>=3.11,<4
+seaborn>=0.13,<0.14
+openpyxl>=3.1,<4
+streamlit>=1.67,<2
+plotly>=7.1,<8
