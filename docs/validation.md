@@ -100,8 +100,7 @@ Streamlit Community Cloud configuration is prepared: choose this entry point, Py
 root dependencies and outbound access to UCI. See `docs/deployment.md` for manual steps.
 The project was pushed to [GitHub](https://github.com/AshwinGaikwad-Git/RetailPulse) with user
 authorization on 12 November 2026. Push-triggered GitHub Actions checks were queued at the
-initial verification; consult the Actions tab for current results. No public app deployment
-has been performed. Docker is unavailable locally, so the Dockerfile has not been built or run here.
+initial verification; consult the Actions tab for current results. The [public Streamlit application](https://retailpulse-9k5rdvrfmitcp7jzfsxae8.streamlit.app/) was verified on 12 November 2026: all five views loaded without application exceptions and the headline sales, invoice and customer metrics matched the validated baseline. Docker is unavailable locally, so the Dockerfile has not been built or run here.
 
 ## Remaining limitations and priorities
 

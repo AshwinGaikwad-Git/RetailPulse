@@ -20,7 +20,9 @@ Built by extending the existing Online Retail EDA. The original pipeline, execut
 
 ## Live Demo
 
-**Not deployed yet.** Add the verified live URL here after reviewing and deploying the application. The source is published on GitHub; no public app deployment has been performed.
+**[Open the live RetailPulse dashboard](https://retailpulse-9k5rdvrfmitcp7jzfsxae8.streamlit.app/)**
+
+Deployed on Streamlit Community Cloud. All five views and the original headline metrics were verified in a public browser session on 12 November 2026.
 
 ## Dashboard Screenshots
 
@@ -207,7 +209,7 @@ See [full methodology](docs/methodology.md), [deployment guide](docs/deployment.
 
 ## Deployment
 
-The app is prepared for Streamlit Community Cloud with `streamlit_app.py`, root dependencies and `.streamlit/config.toml`. Choose Python 3.12 and allow the first-run UCI download. **It is not publicly deployed.** Review [deployment steps](docs/deployment.md) before publishing.
+The app is prepared for Streamlit Community Cloud with `streamlit_app.py`, root dependencies and `.streamlit/config.toml`. Choose Python 3.12 and allow the first-run UCI download. The [live application](https://retailpulse-9k5rdvrfmitcp7jzfsxae8.streamlit.app/) has been verified. Review [deployment steps](docs/deployment.md) for configuration and maintenance.
 
 A Dockerfile is supplied as an alternative. Container execution requires Docker and is separately identified as unverified if Docker is unavailable locally.
 

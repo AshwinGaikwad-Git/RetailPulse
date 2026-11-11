@@ -17,7 +17,9 @@ Cold start may take a minute or more depending on network and CPU. If downloads 
 shows a recovery message and source link, never invented data. Manually place `Online Retail.xlsx`
 in `dataset/` when needed. No API key or secret is required.
 
-## Streamlit Community Cloud (prepared, not deployed)
+## Streamlit Community Cloud
+
+Live application: [https://retailpulse-9k5rdvrfmitcp7jzfsxae8.streamlit.app/](https://retailpulse-9k5rdvrfmitcp7jzfsxae8.streamlit.app/). All five pages and baseline headline metrics were verified on 12 November 2026.
 
 1. Review the published [GitHub repository](https://github.com/AshwinGaikwad-Git/RetailPulse),
    license and screenshots. Push any further reviewed changes before deploying.
